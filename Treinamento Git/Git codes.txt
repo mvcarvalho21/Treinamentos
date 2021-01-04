@@ -1,0 +1,113 @@
+git init - criar repositório git
+
+git status - analisar o estado do repositório
+
+git add index.html - adiciona o arquivo index.html ao repositório
+
+git add . - adiciona todos os arquivos da pasta ao repositório
+
+git rm - remove o arquivo do monitoramento
+
+git commit --m "mensagem" - escreve uma mensagem no commit
+
+clear - limpa o Git Bach
+
+git config --local user.name "Seu nome aqui"
+
+git config --local user.email "seu@email.aqui"
+
+*HEAD: Estado atual do nosso código, ou seja, onde o Git nos colocou
+*Working tree: Local onde os arquivos realmente estão sendo armazenados e editados
+*index: Local onde o Git armazena o que será commitado, ou seja, o local entre a working tree e o repositório Git em si.
+
+Para mais informações:
+https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Gravando-Altera%C3%A7%C3%B5es-em-Seu-Reposit%C3%B3rio
+
+git log - pra acessar as informações do commit (mensagem, autor, data, etc.)
+
+*HASH - código de identificação de cada commit
+*BRANCH - ramo em que o commit se encontra
+
+git config --local - modificar configurações locais do projeto
+
+git config --global - modificar a máquina toda
+
+git config --local user.name "Marco Carvalho" - altera o nome do autor para Marco Carvalho
+
+git config user.name - mostra o nome do autor
+
+git log --oneline- mostra as informações dos commits cada um em uma unica linha
+
+git log -p -  mostra as diferenças
+
+git log --pretty="format:%H" - comando que nos traz apenas o hash
+
+git log --pretty="format:%h %s" - mostra o hash + mensagem do commit
+
+Mais comandos de log:
+https://devhints.io/git-log
+
+Mais configurações:
+https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
+
+git log --help - abre o help do git
+
+*Arquivo .gitignore - o que estiver dentro dele será ignorado
+*Para criar pelo explorer do windows, pressione shit + botão direito < abrir janela de comando aqui e utilizar o comando rename gitignore.txt .gitignore
+
+mkdir servidor - cria uma pasta no repositório chamada servidor
+
+cd .. - volta uma pasta no Git Bach
+
+git init --bare - indica que este repositório é puro, que contém apenas as alterações dos arquivos, e não uma cópia física de cada um dos arquivos
+
+git remote - mostra todos os repositórios remotos
+
+git add remote nome-repositorio caminho/para/o/repositorio - adiciona o repositório remoto nome-repositório no caminho indicado
+
+git remote -v - faz com que o endereço do repositório servidor local seja exibido
+
+git clone /c/Users/ALURA/Documents/git-e-github/servidor projeto - clona a pasta servidor para a pasta projeto
+
+git push local master - envia as alterações do repositório para o servidor local
+
+git remote rename origin local - renomeia o servidor origin para local
+
+git pull local master - trás as alterações do servidor local para o repositório
+
+git branch - mostra o branch
+
+git branch titulo - aponta para o novo branch, no caso a linha titulo
+
+git checkout titulo - para alternar para a linha de desenvolvimento titulo
+
+git checkout -b lista - cria um branch lista e alterna para o mesmo
+
+git merge titulo - mescla os branchs master(que estou trabalhando) e titulo (que trabalhei)
+
+git rebase titulo - adiciona as linhas alteradas do branch titulo para a master (sem sujar o log)
+
+git log --graph - mostra as alternancias de commits em branch
+
+git checkout -- index.html - desfaz a alteração do arquivo index.html (antes e commitar)
+
+git reset HEAD index.html - desfaz a ultima adição
+
+git revert (hash do commit) - desfaz o ultimo commit
+
+git stash - guarda o arquivo modificado para alterar depois
+
+git stash list - mostra a lista de arquivos guardados
+
+git stash pop - tira a ultima alteração da stash e aplica as modificações
+
+git checkout + numero da hash - volta para um commit específico
+*Caso queira editar e manter as alterações, criar um novo branch.
+
+git diff - mostra a diferença entre o arquivo em edição e o ultimo commit
+
+git diff (de um hash) (a outro hash)- mostra as diferenças entre os commits
+
+git tag -a v0.1.0 -m"lançando a primeira versão" - cria uma revisão no commit atual
+
+
