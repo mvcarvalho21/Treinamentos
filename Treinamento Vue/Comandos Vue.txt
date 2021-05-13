@@ -7,3 +7,7 @@ vue init webpack-simple (nome do projeto)
 npm install
 
 npm run dev
+
+npm start (para rodar o server)
+
+npm install vue-router@2.1.1 (para instalar o router vue)
