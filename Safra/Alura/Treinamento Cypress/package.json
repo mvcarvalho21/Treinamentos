@@ -1,0 +1,15 @@
+{
+  "name": "treinamento-cypress",
+  "version": "1.0.0",
+  "description": "Primeiro projeto Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Marco Carvalho",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.3.1",
+    "mochawesome": "^7.1.3"
+  }
+}

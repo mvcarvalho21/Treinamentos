@@ -1,0 +1,20 @@
+Docker comandos:
+
+docker container run hello-world ----> para criar uma imagem docker
+docker container ls ------> mostra os containers ativos
+docker container ls -a ---------> mostra os containers listados
+docker container run --name hello world ---> nomeia o container criado, ou cria um novo container com o nome definido
+docker container run --rm hello-world ---------> cria um container novo e elimina o anterior de mesmo nome
+docker container rm (id ou nome do docker) -----> remove o container
+docker container run -it ubuntu /bin/bash ----> cria um container com modo interativo no ubuntu
+docker container run -d nginx -------> cria um container em background em execução continua
+docker container exec -it ce152266d1da /bin/bash ----> executa o terminal no container
+docker container run -p 8080:80 -d nginx --------> cria um container na porta 8080 da máquina (para ver acessar localhost:8080 no navegador)
+docker container rm -f ce152266d1da ----> exclui o container a força caso esteja rodando
+docker container run -d -p 5432:5432 -e POSTGRES_PASSWORD=147741 -e POSTGRES_USER=kubenews -e POSTGRES_DB=kubenews postgres --------> Criar banco de dados
+(documentação em docker hub)
+(no diretório que contem o dockerfile) docker build -t ubuntu-curl . ------> instala o passo a passo do Docker file
+docker image prune ---> limpa as imagens que não estão sendo utilizadas
+docker login ---> pra fazer login no docker
+docker push carvalhomarco21/ubuntu-curl:v1 -----> subir a imagem para o docker hub após logado
+ 

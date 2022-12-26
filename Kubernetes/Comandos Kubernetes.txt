@@ -1,0 +1,15 @@
+Comandos kubernetes
+
+k3d cluster create ---> criar um cluster
+kubectl get nodes ----> lista os nodes criados
+k3d cluster list -----> lista os clusters
+k3d cluster delete ----> deleta o cluster
+k3d cluster create --no-lb ----> cria um cluster sem load balance
+k3d cluster create meucluster ---> cria um cluster com nome meucluster
+docker container ls ---> mostra os containers criados (server 0, servelb e tools)
+k3d cluster delete meucluster -----> deleta o cluster meucluster
+k3d cluster create meucluster --servers 3 --agents 3 -----> cria um cluster de nome meucluster com 3 servers e 3 agents
+kubectl api-resources ---> mostra os recursos da api
+kubectl apply -f pod.yaml ---> aplica o arquivo pod.yaml criado a pasta do projeto
+kubectl get pods ------> lista os pods criados
+kubectl describe pod meupod -----> mostra mais informações sobre o pod
